@@ -1,0 +1,173 @@
+body {
+    /* Menggunakan font default Arial dengan fallback sans-serif */
+    font-family: Arial, sans-serif;
+
+    /* Warna latar belakang lembut untuk keseluruhan halaman */
+    background-color: #f0f8ff;
+
+    /* Menjadikan kontainer berada di tengah halaman */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Mengisi tinggi penuh viewport dan menghapus margin default */
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    /* Latar belakang putih untuk kotak utama */
+    background-color: #ffffff;
+
+    /* Memberikan padding di dalam kotak agar konten tidak mepet */
+    padding: 30px;
+
+    /* Membulatkan sudut kotak */
+    border-radius: 10px;
+
+    /* Memberikan efek bayangan lembut untuk kedalaman */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+
+    /* Lebar tetap untuk konsistensi layout */
+    width: 350px;
+
+    /* Konten di dalamnya disejajarkan secara tengah */
+    text-align: center;
+
+    /* Garis tepi hijau untuk menonjolkan elemen utama */
+    border: 2px solid #4CAF50;
+}
+
+h1 {
+    /* Ukuran font sedang untuk judul */
+    font-size: 22px;
+
+    /* Warna hijau yang senada dengan tema */
+    color: #4CAF50;
+}
+
+input, button {
+    /* Ukuran padding seragam untuk input dan tombol */
+    padding: 10px;
+
+    /* Memberikan margin atas untuk memberikan jarak antar elemen */
+    margin-top: 10px;
+
+    /* Lebar penuh untuk responsif */
+    width: 100%;
+
+    /* Menghindari masalah ukuran box */
+    box-sizing: border-box;
+
+    /* Membulatkan sudut untuk tampilan yang lebih lembut */
+    border-radius: 4px;
+}
+
+input {
+    /* Batas abu-abu ringan untuk input */
+    border: 1px solid #ddd;
+}
+
+button {
+    /* Warna latar belakang hijau untuk tombol utama */
+    background-color: #4CAF50;
+
+    /* Warna teks putih agar kontras */
+    color: white;
+
+    /* Menghapus border default */
+    border: none;
+
+    /* Mengubah kursor menjadi pointer saat di-hover */
+    cursor: pointer;
+}
+
+button:hover {
+    /* Warna hijau sedikit lebih gelap untuk efek hover */
+    background-color: #45a049;
+}
+
+.result {
+    /* Jarak atas untuk memisahkan hasil dari input */
+    margin-top: 20px;
+
+    /* Ukuran font sedang untuk keterbacaan */
+    font-size: 16px;
+
+    /* Warna teks abu-abu gelap untuk kontras */
+    color: #333;
+
+    /* Latar belakang ringan untuk menonjolkan hasil */
+    background-color: #f9f9f9;
+
+    /* Memberikan padding untuk kenyamanan membaca */
+    padding: 15px;
+
+    /* Membulatkan sudut untuk tampilan lebih lembut */
+    border-radius: 6px;
+
+    /* Efek bayangan ringan untuk kedalaman */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.result strong {
+    /* Warna hijau untuk menonjolkan teks penting */
+    color: #4CAF50;
+}
+
+.result em {
+    /* Warna biru untuk teks berformat miring */
+    color: #007BFF;
+}
+
+ul {
+    /* Jarak kiri untuk pemisahan daftar dari teks lain */
+    padding-left: 20px;
+
+    /* Penyelarasan teks ke kiri untuk daftar */
+    text-align: left;
+
+    /* Warna abu-abu untuk teks daftar */
+    color: #555;
+}
+
+ul li {
+    /* Jarak bawah antar item daftar untuk keterbacaan */
+    margin-bottom: 10px;
+}
+
+/* Styling untuk pecahan */
+.fraction {
+    /* Membuat pecahan sebagai elemen inline */
+    display: inline-block;
+
+    /* Menyelaraskan pecahan ke tengah */
+    text-align: center;
+
+    /* Posisi relatif untuk styling numerator dan denominator */
+    position: relative;
+    vertical-align: middle;
+}
+
+.fraction .numerator {
+    /* Numerator sebagai blok teks di atas */
+    display: block;
+
+    /* Ukuran font seragam */
+    font-size: 16px;
+}
+
+.fraction .denominator {
+    /* Denominator sebagai blok teks di bawah */
+    display: block;
+
+    /* Ukuran font seragam */
+    font-size: 16px;
+
+    /* Garis atas untuk memisahkan numerator dan denominator */
+    border-top: 1px solid #000;
+
+    /* Memberikan jarak untuk garis pembagi */
+    padding-top: 2px;
+    margin-top: 2px;
+}

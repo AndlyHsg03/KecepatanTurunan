@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kecepatan dan Posisi Pelari</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hitung Kecepatan Kendaraan</h1>
+
+        <!-- Panduan Input Persamaan -->
+        <div id="panduan" style="margin-bottom: 15px; font-size: 14px; color: gray;">
+            <strong>Panduan Input Persamaan:</strong>
+            <ul>
+                <li>Gunakan <strong>t</strong> sebagai variabel waktu.</li>
+                <li>Untuk pangkat, gunakan simbol <strong>^</strong>, misalnya: <em>2t^2</em>.</li>
+                <li>Gunakan Pangkat dengan bilangan bulat > 0 </li>
+                <li>Contoh lain: <em>2t^2 + 3t - 4</em></li>
+                <li>Gunakan t (waktu) dalam bentuk bilangan bulat dan desimal </li>
+            </ul>
+        </div>
+
+        <!-- Label dan input untuk persamaan posisi -->
+        <label for="persamaan">Masukkan persamaan posisi : </label>
+        <input type="text" id="persamaan" placeholder="Misalnya: 2t^2 + 2t" />
+
+        <!-- Label dan input untuk waktu -->
+        <label for="time">Masukkan waktu (t) dalam detik: </label>
+        <input type="number" id="time" placeholder="Masukkan waktu" />
+
+        <!-- Tombol untuk memicu perhitungan -->
+        <button onclick="hitung()">Hitung</button>
+
+        <!-- Div untuk menampilkan hasil kecepatan dan posisi -->
+        <div id="kecepatan" class="result"></div>
+        <div id="posisi" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
